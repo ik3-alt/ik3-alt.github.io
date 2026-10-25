@@ -34,78 +34,25 @@ $(window).scroll(function() {
 		}
 	});
 });
-// ふわっと表示。最初から表示されてるアイテムがスクロールしないと表示されないのを解消しようとした
+
+// tab切り替え
 $(function() {
-	$('.js-fade-in').each(function() { // それぞれに操作を適用？
-		// 図:https://codingwonderland.net/jquery-scroll-fade/がわかりやすい
-		const pos = $(this).offset().top; // うん。ページ全体から見たオブジェクトのy座標か。
-		const scroll = $(window).scrollTop(); // ページ全体から見たウインドウの上端のy座標
-		const wHeight = $(window).height();
-		if (pos < scroll + wHeight){ // オブジェクト上端のy座標 < ウインドウ下端のy座標
-			$(this).addClass('is-inview');
-		}
+	// tabボタンがクリックされたとき
+	$(".tab").on("click", function() {
+		// tab
+		$(".tab").removeClass("active");
+		$(this).addClass("active");
+		// data-target (section)にもクラスを付与
+		$(".tab-content").removeClass("active");
+		$("#" + $(this).data("target")).addClass("active"); // すごい
 	});
 });
 
-// mainvisual動画スライドショー
-$(function () {
-  const $slides = $(".slide");
-  let currentIndex = 0;
-  let timer;
-  let isSwitching = false;
-
-  function showNext() {
-    // 二重実行を防ぐ
-    if (isSwitching) return;
-    isSwitching = true;
-
-    clearTimeout(timer);
-
-    const currentVideo = $slides.eq(currentIndex).get(0);
-
-    // 現在の動画を停止
-    if (currentVideo) {
-      currentVideo.pause();
-      $(currentVideo).off("ended.slideshow");
-    }
-
-    $slides.eq(currentIndex).removeClass("active");
-
-    currentIndex = (currentIndex + 1) % $slides.length;
-
-    const $next = $slides.eq(currentIndex);
-    const nextVideo = $next.get(0);
-
-    $next.addClass("active");
-
-    if (nextVideo) {
-      nextVideo.currentTime = 0;
-
-      // 次の動画のイベントを設定
-      $(nextVideo).off("ended.slideshow").on(
-        "ended.slideshow",
-        showNext
-      );
-
-      nextVideo.play().catch(function (error) {
-        console.log("動画の再生に失敗:", error);
-      });
-
-      timer = setTimeout(showNext, 15000);
-    }
-
-    isSwitching = false;
-  }
-
-  const firstVideo = $slides.eq(0).get(0);
-
-  if (firstVideo) {
-    firstVideo.play().catch(function (error) {
-      console.log("動画の再生に失敗:", error);
-    });
-
-    $(firstVideo).on("ended.slideshow", showNext);
-
-    timer = setTimeout(showNext, 15000);
+// スクロール量に応じてヘッダーを透明に
+$(window).on("scroll", function() {
+  if ($(this).scrollTop() > 80) { // header-height
+    $("#header").addClass("scrolled");
+  } else {
+    $("#header").removeClass("scrolled");
   }
 });

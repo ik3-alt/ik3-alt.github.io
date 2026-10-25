@@ -3,49 +3,42 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="Description" content="ベーカリーヤマグチへのお問い合わせはこちら。店舗の地図や駐車場情報をご案内しています。お電話でのご予約も承っておりますので、お気軽にお問い合わせください。">
+	<meta name="Description" content="IKのデザインポートフォリオサイトです。">
+	<!-- favicon -->
+	<link rel="icon" href="images/favicon.ico">
 	<!-- css -->
 	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-	<link rel="stylesheet" href="css/style.css?v=20261020">
-	<!-- js -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="css/style.css">
 	<!-- font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap" rel="stylesheet">
+	<!-- js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 	
-	<link rel="icon" href="images/favicon.ico">
-	<title>お問い合わせ | ベーカリーヤマグチ</title>
+	<title>CONTACT | IK Design Portfolio</title>
 </head>
 <body id="contact">
 	<header id="header">
-		<h1 class="sp-only"><a href="index.html"><img src="images/logo-sp.svg" alt="ベーカリーヤマグチ | 郡山のおいしいパン屋さん"></a></h1>
-		<h1 class="pc-only"><a href="index.html"><img src="images/logo-pc.svg" alt="ベーカリーヤマグチ | 郡山のおいしいパン屋さん"></a></h1>
+		<h1>
+			<a href="index.html">
+				<img src="images/logo-sp.svg" class="sp-only" alt="TOP | IK Design Portfolio">
+				<img src="images/logo-pc.svg" class="pc-only" alt="TOP | IK Design Portfolio">
+			</a>
+		</h1>
 	</header>
 	<div id="nav-bg"></div>
 	<nav id="nav">
 		<ul>
-			<li>
-				<a href="index.html" class="nav-link">TOP</a>
-				<p class="pc-only">サイトのトップページです。</p>
-			</li>
-			<li>
-				<a href="menu.html" class="nav-link">商品一覧</a>
-				<p class="pc-only">季節のパンやおすすめの商品はこちら。</p>
-			</li>
-			<li>
-				<a href="creambox.html" class="nav-link">ヤマグチのクリームボックス</a>
-				<p class="pc-only">郡山名物のご当地パンです。</p>
-			</li>
-			<li>
-				<a href="effort.html" class="nav-link">当店のこだわり</a>
-				<p class="pc-only">素材本来のおいしさを大切にしています。</p>
-			</li>
-			<li>
-				<a href="contact.html" class="nav-link">お問い合わせ</a>
-				<p class="pc-only">お電話でのご予約も承っております。</p>
-			</li>
+			<li><a href="index.html">TOP</a></li>
+			<li><a href="about.html">ABOUT</a></li>
+			<li><a href="works.html">WORKS</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
 		</ul>
 	</nav>
 	<div class="nav-btn-outer">
@@ -55,105 +48,32 @@
 			<div class="line line3"></div>
 		</div>
 	</div>
-	<main id="main" class="content-wrapper">
-		<h1 class="page-title">お問い合わせ</h1>
-		<p class="contact">お電話でのご予約も承っておりますので、お気軽にお問い合わせください。</p>
-		<section id="honten">
-			<h2 class="section-title">ベーカリーヤマグチ　本店</h2>
-			<div class="info-flex">
-				<dl class="shop-info">
-					<dt>住所</dt>
-					<dd>〒963-8861<br>福島県郡山市鶴見坦1丁目14-5</dd>
-					<dt>電話</dt>
-					<dd><a href="tel:024xxxxxxx">024-000-0000</a></dd>
-					<dt>FAX</dt>
-					<dd>024-XXX-XXXX</dd>
-					<dt>電子メール</dt>
-					<dd><a href="mailto:b-yamagichi@nk.xx.jp">b-yamagichi&#64;nk.xx.jp</a></dd>
-					<dt>駐車場</dt>
-					<dd>5台分あり</dd>
+	<main id="main" class="main-wrapper">
+		<h1 class="page-title">
+			<span class="en">CONTACT</span>
+			<span class="ja">お問い合わせ</span>
+		</h1>
+		<section id="form" class="content-wrapper">
+			<h2 class="section-title"><span class="en">Form</span><span class="ja">お問い合わせフォーム</span></h2>
+			<p>作品や制作に関するお問い合わせ、ご質問などがございましたら、下記フォームよりお気軽にお問い合わせください。</p>
+			<p class="section-start">ご入力いただいた個人情報は、お問い合わせへの回答および必要なご連絡のために利用し、それ以外の目的では利用いたしません。</p>
+			<form action="#" method="post">
+				<dl>
+					<dt><label for="name">お名前（必須）</label></dt>
+					<dd><input type="text" id="name" name="name" required></dd>
+					<dt><label for="mail">メールアドレス（必須）</label></dt>
+					<dd><input type="email" id="mail" name="mail" required></dd>
+					<dt><label for="phone">電話番号（任意）</label></dt>
+					<dd><input type="tel" id="phone" name="phone"></dd>
+					<dt><label for="message">お問い合わせ内容（必須）</label></dt>
+					<dd><textarea name="message" id="message" required></textarea></dd>
 				</dl>
-				<div class="map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198.1087986883433!2d140.36227696041203!3d37.39596216270267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60206cbbe8005311%3A0xe4276796638b924c!2z44Ko44OM44Kx44O844O744OG44OD44KvKOagqik!5e0!3m2!1sja!2sjp!4v1792390659756!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-				</div>
-			</div>
+				<button type="submit">送信</button>
+			</form>
 		</section>
-		<section id="linen-city">
-			<h2 class="section-title">ベーカリーヤマグチ　リネンシティ郡山店</h2>
-			<div class="info-flex">
-				<dl class="shop-info">
-					<dt>住所</dt>
-					<dd>〒963-8860<br>福島県郡山市東村山1-1-1</dd>
-					<dt>電話</dt>
-					<dd><a href="tel:024xxxxxxx">024-000-0000</a></dd>
-					<dt>FAX</dt>
-					<dd>024-XXX-XXXX</dd>
-					<dt>電子メール</dt>
-					<dd><a href="mailto:b-yamagichi@nk.xx.jp">b-yamagichi&#64;nk.xx.jp</a></dd>
-					<dt>イートインスペース</dt>
-					<dd>あり（5席）</dd>
-				</dl>
-				<div class="map">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.7053637938957!2d140.36399757567423!3d37.39679957208308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60206d91dbb794af%3A0x8d5c4b6fc5e9f618!2z5pen6LGK55Sw5rWE5rC05aC06LKv5rC05rGg!5e0!3m2!1sja!2sjp!4v1792391186347!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-				</div>
-			</div>
-		</section>
-		<a href="#" class="totop">このページの先頭へ</a>
 	</main>
 	<footer id="footer">
-		<div class="footer-outer">
-			<div class="footer-inner content-wrapper">
-				<div class="site-map footer-item">
-					<h2 class="footer-title">サイトマップ</h2>
-					<ul>
-						<li>
-							<a href="index.html" class="nav-link">TOP</a>
-							<p class="pc-only">サイトのトップページです。</p>
-						</li>
-						<li>
-							<a href="menu.html" class="nav-link">商品一覧</a>
-							<p class="pc-only">季節のパンやおすすめの商品はこちら。</p>
-						</li>
-						<li>
-							<a href="creambox.html" class="nav-link">ヤマグチのクリームボックス</a>
-							<p class="pc-only">郡山名物のご当地パンです。</p>
-						</li>
-						<li>
-							<a href="effort.html" class="nav-link">当店のこだわり</a>
-							<p class="pc-only">素材本来のおいしさを大切にしています。</p>
-						</li>
-						<li>
-							<a href="contact.html" class="nav-link">お問い合わせ</a>
-							<p class="pc-only">お電話でのご予約も承っております。</p>
-						</li>
-					</ul>
-				</div>
-				<div class="info footer-item">
-					<h2 class="footer-title">店舗情報</h2>
-					<h3 class="shop-name">ベーカリーヤマグチ　本店</h3>
-					<dl>
-						<dt>TEL</dt>
-						<dd>024-000-0000</dd>
-						<dt>Open</dt>
-						<dd>8:00</dd>
-						<dt>Close</dt>
-						<dd>19:00</dd>
-						<dt>定休</dt>
-						<dd>日曜日</dd>
-					</dl>
-					<h3 class="shop-name">ベーカリーヤマグチ　リネンシティ郡山店</h3>
-					<dl>
-						<dt>TEL</dt>
-						<dd>024-000-0000</dd>
-						<dt>Open</dt>
-						<dd>10:00</dd>
-						<dt>Close</dt>
-						<dd>22:00</dd>
-					</dl>
-				</div>
-			</div>
-			<p class="small">&copy; 2026 Bakery Yamaguchi All Rights Reserved.</p>
-		</div>
+		<p class="small">&copy; 2026 IK All Rights Reserved.</p>
 	</footer>
 </body>
 </html>
