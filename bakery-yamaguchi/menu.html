@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" content="ベーカリーヤマグチのメニュー一覧です。季節のパンやおすすめの商品をご紹介しています。">
+	<!-- css -->
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+	<link rel="stylesheet" href="css/style.css?v=20261020">
+	<!-- js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+	
+	<link rel="icon" href="images/favicon.ico">
+	<title>商品一覧 | ベーカリーヤマグチ</title>
+</head>
+<body id="menu">
+	<header id="header">
+		<h1 class="sp-only"><a href="index.html"><img src="images/logo-sp.svg" alt="ベーカリーヤマグチ | 郡山のおいしいパン屋さん"></a></h1>
+		<h1 class="pc-only"><a href="index.html"><img src="images/logo-pc.svg" alt="ベーカリーヤマグチ | 郡山のおいしいパン屋さん"></a></h1>
+	</header>
+	<div id="nav-bg"></div>
+	<nav id="nav">
+		<ul>
+			<li>
+				<a href="index.html" class="nav-link">TOP</a>
+				<p class="pc-only">サイトのトップページです。</p>
+			</li>
+			<li>
+				<a href="menu.html" class="nav-link">商品一覧</a>
+				<p class="pc-only">季節のパンやおすすめの商品はこちら。</p>
+			</li>
+			<li>
+				<a href="creambox.html" class="nav-link">ヤマグチのクリームボックス</a>
+				<p class="pc-only">郡山名物のご当地パンです。</p>
+			</li>
+			<li>
+				<a href="effort.html" class="nav-link">当店のこだわり</a>
+				<p class="pc-only">素材本来のおいしさを大切にしています。</p>
+			</li>
+			<li>
+				<a href="contact.html" class="nav-link">お問い合わせ</a>
+				<p class="pc-only">お電話でのご予約も承っております。</p>
+			</li>
+		</ul>
+	</nav>
+	<div class="nav-btn-outer">
+		<div id="nav-btn">
+			<div class="line line1"></div>
+			<div class="line line2"></div>
+			<div class="line line3"></div>
+		</div>
+	</div>
+	<main id="main" class="content-wrapper">
+		<h1 class="page-title">商品一覧</h1>
+		<nav id="section-nav">
+			<ul>
+				<li><a href="#kashipan" class="menu-section-link">菓子パン</a></li>
+				<li><a href="#souzaipan" class="menu-section-link">惣菜パン</a></li>
+				<li><a href="#drink" class="menu-section-link">ドリンク</a></li>
+				<li><a href="#others" class="menu-section-link">その他</a></li>
+			</ul>
+		</nav>
+		<section id="kashipan">
+			<h2 class="section-title">菓子パン</h2>
+			<ul class="menu-list">
+				<li class="pick-up">
+					<div class="image">
+						<img src="images/creambox.jpg" alt="クリームボックス" class="menu js-fade-in">
+						<img src="images/badge.svg" alt="pick up" class="badge js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">クリームボックス</p>
+						<p class="price">&yen;140</p>
+						<p class="detail">濃厚クリームたっぷり</p>
+					</div>
+				</li>
+				<li class="pick-up reverse">
+					<div class="image">
+						<img src="images/menu_maracake.jpg" alt="マーラーカオ" class="menu js-fade-in">
+						<img src="images/badge.svg" alt="pick up" class="badge js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">マーラーカオ</p>
+						<p class="price">&yen;150</p>
+						<p class="detail">ふんわり蒸し上げました</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_anpan.jpg" alt="あんぱん" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">あんぱん</p>
+						<p class="price">&yen;120</p>
+						<p class="detail">粒あんぎっしり</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_coronet.jpg" alt="コロネ（チョコ）" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">コロネ（チョコ）</p>
+						<p class="price">&yen;130</p>
+						<p class="detail">チョコクリームたっぷり</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_coronet.jpg" alt="コロネ（カスタード）" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">コロネ（カスタード）</p>
+						<p class="price">&yen;130</p>
+						<p class="detail">なめらかカスタード入り</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_melon.jpg" alt="メロンパン" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">メロンパン</p>
+						<p class="price">&yen;180</p>
+						<p class="detail">サクふわ食感が自慢</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_anpan.jpg" alt="クリームパン" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">クリームパン</p>
+						<p class="price">&yen;120</p>
+						<p class="detail">とろけるクリーム入り</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_anpan.jpg" alt="チョコデニッシュ" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">チョコデニッシュ</p>
+						<p class="price">&yen;140</p>
+						<p class="detail">チョコ香るサクサク生地</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_anpan.jpg" alt="あんドーナツ" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">あんドーナツ</p>
+						<p class="price">&yen;130</p>
+						<p class="detail">あんこたっぷり揚げたて</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_anpan.jpg" alt="レーズンパン" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">レーズンパン</p>
+						<p class="price">&yen;140</p>
+						<p class="detail">レーズンの甘み広がる</p>
+					</div>
+				</li>
+			</ul>
+			<a href="#" class="totop">このページの先頭へ</a>
+		</section>
+		<section id="souzaipan">
+			<h2 class="section-title">惣菜パン</h2>
+			<ul class="menu-list">
+				<li class="pick-up">
+					<div class="image">
+						<img src="images/menu_bread.jpg" alt="山塩パン" class="menu js-fade-in">
+						<img src="images/badge.svg" alt="pick up" class="badge js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">山塩パン</p>
+						<p class="price">&yen;120</p>
+						<p class="detail">山塩が引き立てる旨み</p>
+					</div>
+				</li>
+				<li class="pick-up reverse">
+					<div class="image">
+						<img src="images/menu_anpan.jpg" alt="有機野菜サンドイッチ" class="menu js-fade-in">
+						<img src="images/badge.svg" alt="pick up" class="badge js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">有機野菜サンドイッチ</p>
+						<p class="price">&yen;250</p>
+						<p class="detail">新鮮野菜をたっぷり使用</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_anpan.jpg" alt="カレーパン" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">カレーパン</p>
+						<p class="price">&yen;160</p>
+						<p class="detail">スパイス香る本格カレー</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/Sausage.jpg" alt="ソーセージパン" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">ソーセージパン</p>
+						<p class="price">&yen;160</p>
+						<p class="detail">ジューシーなソーセージ</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_anpan.jpg" alt="ピザパン" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">ピザパン</p>
+						<p class="price">&yen;180</p>
+						<p class="detail">チーズとトマトの旨み</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_anpan.jpg" alt="たまごサンドイッチ" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">たまごサンドイッチ</p>
+						<p class="price">&yen;280</p>
+						<p class="detail">たまごたっぷりまろやか</p>
+					</div>
+				</li>
+			</ul>
+			<a href="#" class="totop">このページの先頭へ</a>
+		</section>
+		<section id="drink">
+			<h2 class="section-title">ドリンク</h2>
+			<ul class="menu-list">
+				<li>
+					<div class="image">
+						<img src="images/menu_anpan.jpg" alt="コーヒー" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">コーヒー（HOT / ICE）</p>
+						<p class="price">&yen;200</p>
+						<p class="detail">香り豊かな一杯</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_anpan.jpg" alt="カフェラテ" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">カフェラテ（HOT / ICE）</p>
+						<p class="price">&yen;250</p>
+						<p class="detail">ミルク香るまろやかな味</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_anpan.jpg" alt="紅茶" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">紅茶（HOT / ICE）</p>
+						<p class="price">&yen;200</p>
+						<p class="detail">ほっと安らぐ香り</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_anpan.jpg" alt="オレンジジュース" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">オレンジジュース</p>
+						<p class="price">&yen;200</p>
+						<p class="detail">すっきり爽やかな味わい</p>
+					</div>
+				</li>
+			</ul>
+			<a href="#" class="totop">このページの先頭へ</a>
+		</section>
+		<section id="others">
+			<h2 class="section-title">その他</h2>
+			<ul class="menu-list">
+				<li class="pick-up">
+					<div class="image">
+						<img src="images/menu_bread.jpg" alt="熟成生食パン（1斤）" class="menu js-fade-in">
+						<img src="images/badge.svg" alt="pick up" class="badge js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">熟成生食パン（1斤）</p>
+						<p class="price">&yen;450</p>
+						<p class="detail">熟成が生む豊かな甘み</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_bread.jpg" alt="食パン" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">食パン（1斤）</p>
+						<p class="price">&yen;250</p>
+						<p class="detail">毎日食べたい定番の味</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_croissant.jpg" alt="クロワッサン" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">クロワッサン</p>
+						<p class="price">&yen;140</p>
+						<p class="detail">バター香るサクサク食感</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_france.jpg" alt="フランスパン（1本）" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">フランスパン（1本）</p>
+						<p class="price">&yen;250</p>
+						<p class="detail">外はパリッと中はもちもち</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_bread.jpg" alt="熟成生食パン（ハーフ）" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">熟成生食パン（ハーフ）</p>
+						<p class="price">&yen;225</p>
+						<p class="detail">しっとりやわらかな口どけ</p>
+					</div>
+				</li>
+				<li>
+					<div class="image">
+						<img src="images/menu_france.jpg" alt="フランスパン（ハーフ）" class="menu js-fade-in">
+					</div>
+					<div class="text">
+						<p class="title">フランスパン（ハーフ）</p>
+						<p class="price">&yen;125</p>
+						<p class="detail">食べきりサイズで手軽に</p>
+					</div>
+				</li>
+			</ul>
+			<a href="#" class="totop">このページの先頭へ</a>
+		</section>
+	</main>
+	<footer id="footer">
+		<div class="footer-outer">
+			<div class="footer-inner content-wrapper">
+				<div class="site-map footer-item">
+					<h2 class="footer-title">サイトマップ</h2>
+					<ul>
+						<li>
+							<a href="index.html" class="nav-link">TOP</a>
+							<p class="pc-only">サイトのトップページです。</p>
+						</li>
+						<li>
+							<a href="menu.html" class="nav-link">商品一覧</a>
+							<p class="pc-only">季節のパンやおすすめの商品はこちら。</p>
+						</li>
+						<li>
+							<a href="creambox.html" class="nav-link">ヤマグチのクリームボックス</a>
+							<p class="pc-only">郡山名物のご当地パンです。</p>
+						</li>
+						<li>
+							<a href="effort.html" class="nav-link">当店のこだわり</a>
+							<p class="pc-only">素材本来のおいしさを大切にしています。</p>
+						</li>
+						<li>
+							<a href="contact.html" class="nav-link">お問い合わせ</a>
+							<p class="pc-only">お電話でのご予約も承っております。</p>
+						</li>
+					</ul>
+				</div>
+				<div class="info footer-item">
+					<h2 class="footer-title">店舗情報</h2>
+					<h3 class="shop-name">ベーカリーヤマグチ　本店</h3>
+					<dl>
+						<dt>TEL</dt>
+						<dd>024-000-0000</dd>
+						<dt>Open</dt>
+						<dd>8:00</dd>
+						<dt>Close</dt>
+						<dd>19:00</dd>
+						<dt>定休</dt>
+						<dd>日曜日</dd>
+					</dl>
+					<h3 class="shop-name">ベーカリーヤマグチ　リネンシティ郡山店</h3>
+					<dl>
+						<dt>TEL</dt>
+						<dd>024-000-0000</dd>
+						<dt>Open</dt>
+						<dd>10:00</dd>
+						<dt>Close</dt>
+						<dd>22:00</dd>
+					</dl>
+				</div>
+			</div>
+			<p class="small">&copy; 2026 Bakery Yamaguchi All Rights Reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>
