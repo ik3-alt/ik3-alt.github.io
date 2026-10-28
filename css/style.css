@@ -33,7 +33,7 @@ a, button[type="submit"] {
 
 a.access {
   width: 150px;
-  margin-bottom: 40px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   padding: 3px 7px;
@@ -45,7 +45,7 @@ a.access {
   font-family: "Noto Sans JP", sans-serif; }
   @media screen and (min-width: 768px) {
     a.access {
-      margin-bottom: 50px;
+      margin-top: 20px;
       padding: 5px 10px; } }
 
 a.section-end {
@@ -98,6 +98,15 @@ button[type="submit"] {
     .flex-1image-1text .image img {
       width: 100%;
       display: block; }
+    .flex-1image-1text .image a {
+      position: relative; }
+      .flex-1image-1text .image a .zoom {
+        width: 50px;
+        aspect-ratio: 1/1;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        filter: drop-shadow(0px 0px 5px #fff); }
   .flex-1image-1text .text {
     width: 100%;
     margin-top: 30px; }

@@ -9,6 +9,8 @@
 	<!-- css -->
 	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<!-- lightbox(css) -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.12.0/css/lightbox.min.css" integrity="sha512-syoVEtpqX1CXqIWO4cTmlEfUKIqzne0NisLTmR4xGZNxNCjge36r1N9hJPCHVd1vPYAlAWHWFDFenTpn8ju2BA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 	<!-- font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,11 +64,14 @@
 		<section id="dtp" class="tab-content content-wrapper active">
 			<h2 class="section-title"><span class="en">DTP</span><span class="ja">DTP作品一覧</span></h2>
 			<ul class="works-list">
-				<li>
+				<li class="harotore">
 					<h3 class="subsection-title">イベント「第3回 ハロトレフェス in ふくしま」チラシ</h3>
 					<div class="flex-1image-1text">
 						<div class="image">
-							<img src="images/works_01.png" alt="イベント「第3回 ハロトレフェス in ふくしま」チラシ">
+							<a href="images/works_01.png" data-lightbox="dtp" data-title="イベント「第3回 ハロトレフェス in ふくしま」チラシ">
+								<img src="images/works_01.png" alt="イベント「第3回 ハロトレフェス in ふくしま」チラシ">
+								<img src="images/zoom.svg" alt="" class="zoom">
+							</a>
 						</div>
 						<div class="text">
 							<dl>
@@ -86,35 +91,14 @@
 						</div>
 					</div>
 				</li>
-				<li>
-					<h3 class="subsection-title">数量限定メニュー「オニジロー」卓上メニュー</h3>
-					<div class="flex-1image-1text">
-						<div class="image">
-							<img src="images/works_02.png" alt="数量限定メニュー「オニジロー」卓上メニュー">
-						</div>
-						<div class="text">
-							<dl>
-								<dt>制作時間</dt>
-								<dd>5時間</dd>
-								<dt>制作ツール</dt>
-								<dd>Adobe Illustrator, Adobe Photoshop (生成拡張を使用)</dd>
-								<dt>ターゲット</dt>
-								<dd>来店中の、ガッツリ食べたい若い男性</dd>
-								<dt>コンセプト</dt>
-								<dd>
-									架空のラーメン店「ラーメン鬼五郎」の数量限定メニューを紹介する、卓上メニューとして制作。<br>
-									白い商品写真と黒い背景を組み合わせ、シンプルな色遣いで「挑戦者」を思わせるかっこよさを演出した。筆文字を取り入れることで、力強さや勢いを表現している。<br>
-									また、素材写真にはなかった湯気を加え、熱々のラーメンを想像させるシズル感を演出した。文字のジャンプ率を意識し、メニュー名と価格がひと目で伝わるよう、情報にメリハリをつけている。
-								</dd>
-							</dl>
-						</div>
-					</div>
-				</li>
-				<li>
+				<li class="wc">
 					<h3 class="subsection-title">「株式会社 ワークスコーポレーション」ロゴ &amp; 名刺デザイン</h3>
 					<div class="flex-1image-1text">
 						<div class="image">
-							<img src="images/works_03.png" alt="「株式会社 ワークスコーポレーション」ロゴ &amp; 名刺デザイン">
+							<a href="images/works_03.png" data-lightbox="dtp" data-title="「株式会社 ワークスコーポレーション」ロゴ &amp; 名刺デザイン">
+								<img src="images/works_03.png" alt="「株式会社 ワークスコーポレーション」ロゴ &amp; 名刺デザイン">
+								<img src="images/zoom.svg" alt="" class="zoom">
+							</a>
 						</div>
 						<div class="text">
 							<dl>
@@ -134,25 +118,56 @@
 						</div>
 					</div>
 				</li>
+				<li class="onijiro">
+					<h3 class="subsection-title">数量限定メニュー「オニジロー」卓上メニュー</h3>
+					<div class="flex-1image-1text">
+						<div class="image">
+							<a href="images/works_02.png" data-lightbox="dtp" data-title="数量限定メニュー「オニジロー」卓上メニュー">
+								<img src="images/works_02.png" alt="数量限定メニュー「オニジロー」卓上メニュー">
+								<img src="images/zoom.svg" alt="" class="zoom">
+							</a>
+						</div>
+						<div class="text">
+							<dl>
+								<dt>制作時間</dt>
+								<dd>5時間</dd>
+								<dt>制作ツール</dt>
+								<dd>Adobe Illustrator, Adobe Photoshop (生成拡張を使用)</dd>
+								<dt>ターゲット</dt>
+								<dd>来店中の、ガッツリ食べたい若い男性</dd>
+								<dt>コンセプト</dt>
+								<dd>
+									架空のラーメン店「ラーメン鬼五郎」の数量限定メニューを紹介する、卓上メニューとして制作。<br>
+									白い商品写真と黒い背景を組み合わせ、シンプルな色遣いで「挑戦者」を思わせるかっこよさを演出した。筆文字を取り入れることで、力強さや勢いを表現している。<br>
+									また、素材写真にはなかった湯気を加え、熱々のラーメンを想像させるシズル感を演出した。文字のジャンプ率を意識し、メニュー名と価格がひと目で伝わるよう、情報にメリハリをつけている。
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</li>
+
 			</ul>
 			<a href="#" class="section-end">PAGE TOP</a>
 		</section>
 		<section id="web" class="tab-content content-wrapper">
 			<h2 class="section-title"><span class="en">Web</span><span class="ja">Web作品一覧</span></h2>
 			<ul class="works-list">
-				<li>
+				<li class="pf">
 					<h3 class="subsection-title">IK Design Portfolio</h3>
 					<div class="flex-1image-1text">
 						<div class="image">
-							<img src="images/about.jpg" alt="IK Design Portfolio">
+							<a href="images/w10.png" data-lightbox="web" data-title="IK Design Portfolio">
+								<img src="images/w10.png" alt="IK Design Portfolio">
+								<img src="images/zoom.svg" alt="" class="zoom">
+							</a>
+							<a href="index.html" class="access" target="_blank" rel="noopener noreferrer">サイトを見る</a>
 						</div>
 						<div class="text">
-							<a href="index.html" class="access" target="_blank" rel="noopener noreferrer">別タブで開く</a>
 							<dl>
 								<dt>制作時間</dt>
 								<dd>30時間 (推定)</dd>
 								<dt>制作ツール</dt>
-								<dd>Adobe XD, Adobe Dreamweaver</dd>
+								<dd>Adobe Illustrator, Adobe XD, Adobe Dreamweaver</dd>
 								<dt>ターゲット</dt>
 								<dd>企業の採用担当者</dd>
 								<dt>コンセプト</dt>
@@ -165,44 +180,94 @@
 						</div>
 					</div>
 				</li>
-				<li>
-					<h3 class="subsection-title">エヌケイ洋菓子店　トップページ</h3>
+				<li class="bakery">
+					<h3 class="subsection-title">「ベーカリーヤマグチ」Webサイト</h3>
 					<div class="flex-1image-1text">
 						<div class="image">
-							<img src="images/about.jpg" alt="テキスト">
+							<a href="images/w12.png" data-lightbox="web" data-title="「ベーカリーヤマグチ」Webサイト">
+								<img src="images/w12.png" alt="「ベーカリーヤマグチ」Webサイト">
+								<img src="images/zoom.svg" alt="" class="zoom">
+							</a>
+							<a href="bakery-yamaguchi/index.html" class="access" target="_blank" rel="noopener noreferrer">サイトを見る</a>
+
 						</div>
 						<div class="text">
-							<a href="nk-yogashi/index.html" class="access" target="_blank" rel="noopener noreferrer">別タブで開く</a>
 							<dl>
 								<dt>制作時間</dt>
-								<dd>99時間</dd>
+								<dd>15時間</dd>
 								<dt>制作ツール</dt>
-								<dd>テキストテキストテキストテキストテキスト</dd>
-								<dt>ターゲット</dt>
-								<dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+								<dd>Adobe Illustrator, Adobe XD, Adobe Dreamweaver</dd>
+								<dt>ペルソナ</dt>
+								<dd>
+									いわき市に住む50歳の専業主婦。昨今の物価高騰により、近所のパン屋の商品も値上がりし、パン屋を利用する頻度が減っている。<br>
+									2人の子どもはどちらも郡山市で生活している。福島中央テレビ『ゴジてれ Chu!』で、郡山市にあるベーカリーヤマグチのお得なクリームボックスが紹介されたことをきっかけに、ベーカリーヤマグチに興味を持つ。<br>
+									実際に店舗を訪れ、商品を楽しむとともに、子どもたちとの会話の話題にしたいと考えている。
+								</dd>
 								<dt>コンセプト</dt>
-								<dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+								<dd>
+									SEO対策を意識し、titleタグ・h1タグ・meta descriptionにページのキーワードを自然に盛り込み、検索エンジンとユーザーの双方にページの内容が伝わるよう工夫した。また、各ページの役割を明確にし、情報を探しやすいサイト構成を目指した。<br>
+									ターゲット層に親しみを感じてもらえるよう、やわらかく温かみのある雰囲気を意識してデザインカンプを制作した。優しい印象のフォントや点線を取り入れ、親しみやすさと見やすさを両立させた。<br>
+									レスポンシブ対応に力を入れ、さまざまな画面サイズでも快適に閲覧できるよう工夫した。また、最小フォントサイズを16pxに設定し、文字の読みやすさにも配慮した。商品一覧ページにはアニメーションを実装し、視覚的な楽しさと動きのあるサイトを目指した。
+								</dd>
 							</dl>
 						</div>
 					</div>
 				</li>
-				<li>
-					<h3 class="subsection-title">ベーカリーヤマグチ　Webサイト</h3>
+				<li class="airline">
+					<h3 class="subsection-title">航空会社「NK-AIRLINE」バナー広告</h3>
 					<div class="flex-1image-1text">
 						<div class="image">
-							<img src="images/about.jpg" alt="テキスト">
+							<a href="images/w13.png" data-lightbox="web" data-title="航空会社「NK-AIRLINE」バナー広告">
+								<img src="images/w13.png" alt="航空会社「NK-AIRLINE」バナー広告">
+								<img src="images/zoom.svg" alt="" class="zoom">
+							</a>
+							<a href="nyahoo/index.html" class="access" target="_blank" rel="noopener noreferrer">サイトを見る</a>
+
 						</div>
 						<div class="text">
-							<a href="bakery-yamaguchi/index.html" class="access" target="_blank" rel="noopener noreferrer">別タブで開く</a>
 							<dl>
 								<dt>制作時間</dt>
-								<dd>99時間</dd>
+								<dd>5時間</dd>
 								<dt>制作ツール</dt>
-								<dd>テキストテキストテキストテキストテキスト</dd>
-								<dt>ターゲット</dt>
-								<dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+								<dd>Adobe Illustrator, Adobe Photoshop, Adobe Dreamweaver</dd>
+								<dt>ペルソナ</dt>
+								<dd>銀行員（53歳）と専業主婦（50歳）の夫婦。2人の子どもはすでに自立しており、時間と経済的な余裕がある。好奇心旺盛で、年に1回は海外旅行を楽しんでいる。日本では味わえない特別な体験を求めている。</dd>
 								<dt>コンセプト</dt>
-								<dd>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</dd>
+								<dd>
+									架空の航空会社「NK-AIRLINE」のバナー広告を制作。<br>
+									ペルソナの好奇心を刺激するため、明るく開放的な青空ではなく、ミステリアスな雰囲気を持つ黄昏の写真を採用し、未知の体験への期待感を演出した。<br>
+									書体は、情緒や旅への憧れを伝えるテキストに明朝体、具体的な情報を伝えるテキストにゴシック体を使用し、役割に応じて使い分けた。<br>
+									また、Z型の視線誘導を意識して情報を配置し、視線の終点に立体感のあるボタンを設けることで、クリックを促すデザインを目指した。基本の文字サイズを16pxとし、情報の読みやすさにも配慮している。
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</li>
+				<li class="yogashi">
+					<h3 class="subsection-title">「エヌケイ洋菓子店」トップページ</h3>
+					<div class="flex-1image-1text">
+						<div class="image">
+							<a href="images/works-11.png" data-lightbox="web" data-title="「エヌケイ洋菓子店」トップページ">
+								<img src="images/works-11.png" alt="「エヌケイ洋菓子店」トップページ">
+								<img src="images/zoom.svg" alt="" class="zoom">
+							</a>
+							<a href="nk-yogashi/index.html" class="access" target="_blank" rel="noopener noreferrer">サイトを見る</a>
+
+						</div>
+						<div class="text">
+							<dl>
+								<dt>制作時間</dt>
+								<dd>3時間</dd>
+								<dt>制作ツール</dt>
+								<dd>Adobe XD, Adobe Dreamweaver</dd>
+								<dt>ターゲット</dt>
+								<dd>店舗に興味がある人や、おすすめ商品を知りたい人</dd>
+								<dt>コンセプト</dt>
+								<dd>
+									既存のデザインカンプをもとに、架空の店舗「エヌケイ洋菓子店」のトップページをコーディングした。<br>
+									デザインカンプはPC版のみだったため、スマートフォンでの閲覧を想定し、画面幅に応じたレイアウトや要素の配置を自ら検討しながら実装した。デバイスごとの表示の違いを考慮し、さまざまな画面サイズで快適に閲覧できるレスポンシブ対応に力を入れた。<br>
+									また、SCSSを使用し、共通する部品のスタイルをまとめて定義することで、コーディングの省力化を図った。
+								</dd>
 							</dl>
 						</div>
 					</div>
@@ -214,5 +279,7 @@
 	<footer id="footer">
 		<p class="small">&copy; 2026 IK All Rights Reserved.</p>
 	</footer>
+	<!-- lightbox(js) -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.12.0/js/lightbox.min.js" integrity="sha512-GPt0Vd//obpTV/wM591euN1F63tIlgHgiqlYWHUr8QdZnjJlGt5a55NN9fd8NlZ0j9aKmIn5IgBtJ/FoHUX1Ww==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
