@@ -35,11 +35,7 @@ html {
 
 body {
   color: #707070;
-  font-family: Meiryo, sans-serif; }
-  body h1, body h2, body h3, body a {
-    font-family: "Potta One", system-ui; }
-  body p, body dl {
-    font-family: "Hachi Maru Pop", cursive; }
+  font-family: "mutsuki-kana-v2", sans-serif; }
 
 #header {
   width: 100%;

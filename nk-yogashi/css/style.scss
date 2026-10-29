@@ -50,14 +50,15 @@ html {
 }
 body {
 	color: $black;
-	font-family: Meiryo, sans-serif;
+	//font-family: Meiryo, sans-serif;
 	//font-family: "Hachi Maru Pop", cursive;
 	//font-family: "Potta One", system-ui;
+	font-family: "mutsuki-kana-v2", sans-serif; // test
 	h1, h2, h3, a {
-		font-family: "Potta One", system-ui;
+		//font-family: "Potta One", system-ui;
 	}
 	p, dl {
-		font-family: "Hachi Maru Pop", cursive;
+		//font-family: "Hachi Maru Pop", cursive;
 	}
 }
 #header {
