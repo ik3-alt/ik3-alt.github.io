@@ -26,7 +26,7 @@ $(function () {
 $(window).scroll(function() {
 	$('.js-fade-in').each(function() { // それぞれに操作を適用？
 		// 図:https://codingwonderland.net/jquery-scroll-fade/がわかりやすい
-		const pos = $(this).offset().top; // うん。ページ全体から見たオブジェクトのy座標か。
+		const pos = $(this).offset().top; // ページ全体から見たオブジェクトのy座標か。
 		const scroll = $(window).scrollTop(); // ページ全体から見たウインドウの上端のy座標
 		const wHeight = $(window).height();
 		if (pos < scroll + wHeight){ // オブジェクト上端のy座標 < ウインドウ下端のy座標
