@@ -672,31 +672,22 @@ ul {
       flex-wrap: wrap; }
       @media screen and (min-width: 768px) {
         #works .tab-content ul.works-list li dl {
-          flex-direction: row;
           justify-content: space-between; } }
       #works .tab-content ul.works-list li dl dt {
         margin-bottom: 5px;
         font-size: 1.8rem;
         font-weight: bold; }
         @media screen and (min-width: 768px) {
-          #works .tab-content ul.works-list li dl dt:last-of-type {
-            margin-bottom: 0; } }
-        @media screen and (min-width: 768px) {
           #works .tab-content ul.works-list li dl dt {
-            width: 25%;
-            margin-bottom: 30px;
-            font-size: 2.0rem;
-            padding-right: 5px; } }
+            margin-bottom: 10px;
+            font-size: 2.0rem; } }
       #works .tab-content ul.works-list li dl dd {
         margin-bottom: 20px; }
         #works .tab-content ul.works-list li dl dd:last-of-type {
           margin-bottom: 0; }
         @media screen and (min-width: 768px) {
           #works .tab-content ul.works-list li dl dd {
-            width: 75%;
-            margin-bottom: 30px;
-            padding-left: 5px;
-            border-left: 1px dashed #fff; } }
+            margin-bottom: 30px; } }
 
 #contact #form dl {
   display: flex;
